@@ -1,0 +1,55 @@
+body {
+  background: #2d282f;
+  color: rgb(227, 221, 231);
+}
+
+a {
+  color: #d2ade0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+}
+
+th {
+  background-color: #d2ade0;
+  color: #2d282f;
+  font-weight: bold;
+  padding: 8px;
+  text-align: left;
+}
+
+td {
+  border: 1px solid #d2ade0;
+  padding: 8px;
+  text-align: left;
+}
+
+#contact-link {
+  color: #8b599e;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+input,
+textarea,
+.form-input {
+  background-color: #4e4651;
+  border: 1px solid #e3c8ed;
+  color: #d2ade0;
+  padding: 4px;
+}
+
+button {
+  background-color: #d2ade0;
+  border: 1px solid #d2ade0;
+  color: #2d282f;
+  padding: 4px;
+}

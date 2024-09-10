@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contact</title>
+    <link rel="stylesheet" href="assets/main.css" />
   </head>
   <body>
     <header>
@@ -29,7 +30,7 @@
         <br />
         <div>
           <label for="reason">Motivo de contacto:</label>
-          <select name="reason" id="reason">
+          <select class="form-input" name="reason" id="reason">
             <option value="doubt">Duda</option>
             <option value="suggestion">Sugerencia</option>
             <option value="complaint">Queja</option>
@@ -38,7 +39,13 @@
         <br />
         <div>
           <label for="message">Mensaje:</label>
-          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <textarea
+            form="form-input"
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+          ></textarea>
         </div>
         <div>
           <p>
@@ -46,7 +53,7 @@
           </p>
           <label for="feedback">Esta información me pareció </label>
           <input list="feedback" id="myFeedback" name="myFeedback" />
-          <datalist id="feedback">
+          <datalist class="form-input" id="feedback">
             <option value="mala"></option>
             <option value="poco util"></option>
             <option value="util"></option>
