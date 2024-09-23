@@ -13,7 +13,7 @@
         alt="react banner"
         width="80%"
       />
-      <h1>Contacto de apoyo</h1>
+      <h1 id="contact-title">Contacto de apoyo</h1>
       <hr />
     </header>
     <main>
@@ -30,7 +30,7 @@
         <br />
         <div>
           <label for="reason">Motivo de contacto:</label>
-          <select class="form-input" name="reason" id="reason">
+          <select id="select" class="form-input" name="reason" id="reason">
             <option value="doubt">Duda</option>
             <option value="suggestion">Sugerencia</option>
             <option value="complaint">Queja</option>
@@ -51,7 +51,7 @@
           <p>
             Si te gustaría enviarnos feedback, completa el siguiente enunciado:
           </p>
-          <label for="feedback">Esta información me pareció </label>
+          <label for="feedback">Esta información me pareció... </label>
           <input list="feedback" id="myFeedback" name="myFeedback" />
           <datalist class="form-input" id="feedback">
             <option value="mala"></option>
