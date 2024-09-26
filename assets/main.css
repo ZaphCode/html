@@ -70,10 +70,14 @@ button {
 
 .card-container {
   display: flex;
-  justify-content: left;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
+
 .card {
   max-width: 300px;
+  min-width: 250px;
   background-color: #4e4651;
   border: 1px solid #d2ade0;
   margin: 10px;
@@ -141,4 +145,44 @@ form {
   content: " 📋 ";
   padding-left: 15px;
   color: #d2ade0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: left;
+  list-style-type: none;
+  padding: 0;
+  gap: 20px;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #4e4651;
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+  border: 1px solid #d2ade0;
+}
+
+.submenu li {
+  margin: 5px 0;
+}
+
+.submenu a {
+  color: #d2ade0;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.submenu a:hover {
+  color: #8b599e;
+}
+
+nav ul li:hover .submenu {
+  display: block;
+}
+
+#a {
+  color: #f0d5f8;
 }

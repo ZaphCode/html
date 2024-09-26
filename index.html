@@ -18,15 +18,22 @@
           >Contenido Referencial: <a href="https://react.dev"> React docs</a></i
         >
       </div>
-      <div>
+      <nav>
         <h3>Contents</h3>
         <ul>
           <li><a href="#intro">Introducción</a></li>
           <li><a href="#first-steps">Primeros pasos</a></li>
-          <li><a href="#examples">Ejemplos</a></li>
+          <li>
+            <a id="a" href="#examples">Ejemplos</a>
+            <ul class="submenu">
+              <li><a href="#basic-component">Componente básico</a></li>
+              <li><a href="#hooks">Hooks comunes</a></li>
+              <li><a href="#tutorial">Video tutorial</a></li>    
+            </ul>
+          </li>
           <li><a href="#conclusion">Conclusiones</a></li>
         </ul>
-      </div>
+      </nav>
       <section>
         <article>
           <h2 class="title" id="intro">Introducción</h2>
@@ -67,7 +74,7 @@
             <a href="https://github.com">GitHub</a> puedes encontrar muchos
             proyectos de código abierto que utilizan React.
           </p>
-          <p>
+          <p id="basic-component">
             A continuación el código de un componente en React, una de las cosa
             de la librería:
           </p>
@@ -76,7 +83,7 @@
             width="400px"
             alt="test"
           />
-          <p>
+          <p id="hooks">
             Una de las claves de React, además de los componentes, son los
             hooks. Los más importantes a estudiar son:
           </p>
@@ -89,7 +96,7 @@
             <li>useMemo</li>
             <li>useCallback</li>
           </ol>
-          <p>
+          <p id="tutorial">
             En el siguiente video se muestra de forma detallada como se utilizan
             los mencionados Hooks:
           </p>
@@ -178,7 +185,6 @@
               />
               <h4>Svelte JS from scratch</h4>
               <p>
-                <!-- descripcion en español -->
                 Aprende a utilizar Svelte JS desde cero. Svelte es un framework
                 de JavaScript que permite crear aplicaciones web.
               </p>
@@ -194,7 +200,6 @@
               />
               <h4>Next vs Nuxt. Which is the Best?</h4>
               <p>
-                <!-- descripcion en español -->
                 Next.js y Nuxt.js son dos frameworks de JavaScript que permiten
                 crear aplicaciones web de forma rápida y sencilla.
               </p>
@@ -210,7 +215,6 @@
               />
               <h4>Concurrency patters in Go</h>
               <p>
-                <!-- descripcion en español -->
                 Aprende a utilizar patrones de concurrencia en Go. Go es un
                 lenguaje de programación de código abiertos.
               </p>
