@@ -204,7 +204,7 @@ main {
   }
 }
 
-.card {
+.card-fp {
   background-color: var(--primary-gray);
   margin-bottom: 10px;
 }
