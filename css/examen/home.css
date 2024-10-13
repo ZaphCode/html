@@ -1,0 +1,26 @@
+main {
+  section {
+    padding: 25px 60px;
+
+    #banner {
+      background-size: cover;
+      /* background-image: url("https://t4.ftcdn.net/jpg/08/13/79/05/360_F_813790562_EwqHKtLNXyxxNs5aRytwKJ8mfdSxQoOO.jpg"); */
+      /* background-image: url("https://t4.ftcdn.net/jpg/03/50/81/89/360_F_350818949_lJTfzSTDr79e9Kn55PUVZjN19ct20uGc.jpg"); */
+      background-image: url("https://t4.ftcdn.net/jpg/06/44/48/85/360_F_644488550_McD3aDQ3YP5y2oGz0icHw4aej4SHtAkz.jpg");
+      /* background-image: url("https://img.freepik.com/free-photo/gym-with-barbell-floor-sign-that-says-weight_1340-38220.jpg?t=st=1727420855~exp=1727424455~hmac=38cbb6614ffb261f5b3369fcab854d3df6f0d2edf061e65337aacfa30837ad15"); */
+
+      #overlay {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 0) 25%,
+          rgba(20, 235, 108, 1) 80%
+        );
+      }
+    }
+
+    .card {
+      background-color: var(--primary-gray);
+    }
+  }
+}

@@ -1,0 +1,92 @@
+main {
+  section {
+    padding: 25px 60px;
+
+    h2 {
+      margin: 20px 0px;
+      font-size: 35px;
+    }
+
+    .card-container {
+      display: grid;
+      gap: 35px 25px;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+      .card {
+        min-width: 200px;
+        max-width: 250px;
+
+        .graphic {
+          border-radius: var(--radius);
+          background-color: var(--primary-gray);
+          padding: 40px 25px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          color: var(--primary-green);
+          font-size: 19px;
+
+          svg {
+            font-size: 40px;
+          }
+        }
+
+        .grams {
+          background-color: var(--primary-gray);
+          padding: 15px 10px;
+          border-radius: var(--radius);
+          text-align: center;
+          margin-top: 10px;
+        }
+
+        .update-btn {
+          background-color: var(--primary-green);
+          color: var(--primary-green-light);
+          padding: 15px 10px;
+          width: 100%;
+          font-size: large;
+          border-radius: var(--radius);
+          text-align: center;
+          margin-top: 10px;
+          border: none;
+        }
+      }
+    }
+
+    .info {
+      margin: 20px 0px;
+      background-color: var(--primary-gray);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 0px 10px;
+
+      .goal {
+        margin-left: auto;
+        font-style: italic;
+        color: #9c9ca4;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  main {
+    section {
+      text-align: center;
+
+      .card-container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+
+        .card {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

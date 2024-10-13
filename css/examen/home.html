@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./app.css" />
+    <link rel="stylesheet" href="./home.css" />
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fit Core</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <!-- left logo -->
+        <svg
+          class="w-6 h-6 text-gray-800 dark:text-white"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M12 2a1 1 0 0 1 .932.638l7 18a1 1 0 0 1-1.326 1.281L13 19.517V13a1 1 0 1 0-2 0v6.517l-5.606 2.402a1 1 0 0 1-1.326-1.281l7-18A1 1 0 0 1 12 2Z"
+            clip-rule="evenodd"
+            class="logo"
+          />
+        </svg>
+        <h1 class="title-font">Fit Core</h1>
+      </div>
+      <div class="icons-container">
+        <!-- Right icons -->
+        <svg
+          id="settings-icon"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 13v-2a1 1 0 0 0-1-1h-.757l-.707-1.707.535-.536a1 1 0 0 0 0-1.414l-1.414-1.414a1 1 0 0 0-1.414 0l-.536.535L14 4.757V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v.757l-1.707.707-.536-.535a1 1 0 0 0-1.414 0L4.929 6.343a1 1 0 0 0 0 1.414l.536.536L4.757 10H4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h.757l.707 1.707-.535.536a1 1 0 0 0 0 1.414l1.414 1.414a1 1 0 0 0 1.414 0l.536-.535 1.707.707V20a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-.757l1.707-.708.536.536a1 1 0 0 0 1.414 0l1.414-1.414a1 1 0 0 0 0-1.414l-.535-.536.707-1.707H20a1 1 0 0 0 1-1Z"
+          />
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+          />
+        </svg>
+        <!-- <div id="settings-dialog">hola</div> -->
+        <svg
+          id="notification-icon"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 5.365V3m0 2.365a5.338 5.338 0 0 1 5.133 5.368v1.8c0 2.386 1.867 2.982 1.867 4.175 0 .593 0 1.292-.538 1.292H5.538C5 18 5 17.301 5 16.708c0-1.193 1.867-1.789 1.867-4.175v-1.8A5.338 5.338 0 0 1 12 5.365ZM8.733 18c.094.852.306 1.54.944 2.112a3.48 3.48 0 0 0 4.646 0c.638-.572 1.236-1.26 1.33-2.112h-6.92Z"
+          />
+        </svg>
+        <div id="notification-dialog">0 notifications</div>
+      </div>
+    </header>
+    <main>
+      <aside>
+        <div class="selected-tab">
+          <div>
+            <svg
+              class="not-sr-only"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="34"
+              height="34"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m4 12 8-8 8 8M6 10.5V19a1 1 0 0 0 1 1h3v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h3a1 1 0 0 0 1-1v-8.5"
+              />
+            </svg>
+          </div>
+          <a href="./home.html">Home</a>
+        </div>
+
+        <div>
+          <div>
+            <svg
+              class="not-sr-only"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="34"
+              height="34"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9.143 4H4.857A.857.857 0 0 0 4 4.857v4.286c0 .473.384.857.857.857h4.286A.857.857 0 0 0 10 9.143V4.857A.857.857 0 0 0 9.143 4Zm10 0h-4.286a.857.857 0 0 0-.857.857v4.286c0 .473.384.857.857.857h4.286A.857.857 0 0 0 20 9.143V4.857A.857.857 0 0 0 19.143 4Zm-10 10H4.857a.857.857 0 0 0-.857.857v4.286c0 .473.384.857.857.857h4.286a.857.857 0 0 0 .857-.857v-4.286A.857.857 0 0 0 9.143 14Zm10 0h-4.286a.857.857 0 0 0-.857.857v4.286c0 .473.384.857.857.857h4.286a.857.857 0 0 0 .857-.857v-4.286a.857.857 0 0 0-.857-.857Z"
+              />
+            </svg>
+          </div>
+          <a href="./dashboard.html">Dashboard</a>
+        </div>
+        <div>
+          <div>
+            <svg
+              class="not-sr-only"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="34"
+              height="34"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M17.537 12.625a4.421 4.421 0 0 0 2.684 4.047 10.96 10.96 0 0 1-1.384 2.845c-.834 1.218-1.7 2.432-3.062 2.457-1.34.025-1.77-.794-3.3-.794-1.531 0-2.01.769-3.275.82-1.316.049-2.317-1.318-3.158-2.532-1.72-2.484-3.032-7.017-1.27-10.077A4.9 4.9 0 0 1 8.91 6.884c1.292-.025 2.51.869 3.3.869.789 0 2.27-1.075 3.828-.917a4.67 4.67 0 0 1 3.66 1.984 4.524 4.524 0 0 0-2.16 3.805m-2.52-7.432A4.4 4.4 0 0 0 16.06 2a4.482 4.482 0 0 0-2.945 1.516 4.185 4.185 0 0 0-1.061 3.093 3.708 3.708 0 0 0 2.967-1.416Z"
+              />
+            </svg>
+          </div>
+          <a href="./foodplan.html">Food plan</a>
+        </div>
+      </aside>
+
+      <section>
+        <div id="banner" class="mt-6 min-w-[430px] w-11/12 rounded-2xl h-52">
+          <div
+            id="overlay"
+            class="w-full rounded-2xl text-center pr-10 md:pr-20 h-full flex-col flex justify-center items-end"
+          >
+            <h3 class="text-3xl mb-3 -mt-5 text-white">
+              Welcome to
+              <br />
+              <span class="title-font text-4xl">Fit Core</span>
+            </h3>
+            <button class="border-white text-white -mr-2 border-2 py-2 px-4">
+              Start Transformation
+            </button>
+          </div>
+        </div>
+
+        <h2 class="title-font mt-7 font-bold text-4xl">Tools</h2>
+
+        <div
+          class="grid text-cente w-11/12 pt-4 grid-cols-1 gap-y-6 md:grid-cols-3 gap-x-4"
+        >
+          <div
+            class="hover:-translate-y-2 transition-all ease-in duration-300 card px-20 md:px-11 pt-5 rounded-lg pb-7 flex flex-col items-center justify-start"
+          >
+            <svg
+              class="w-[36px] h-[36px] fill-[#14eb6c]"
+              viewBox="0 0 640 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M96 64c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V224v64V448c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32V384H64c-17.7 0-32-14.3-32-32V288c-17.7 0-32-14.3-32-32s14.3-32 32-32V160c0-17.7 14.3-32 32-32H96V64zm448 0v64h32c17.7 0 32 14.3 32 32v64c17.7 0 32 14.3 32 32s-14.3 32-32 32v64c0 17.7-14.3 32-32 32H544v64c0 17.7-14.3 32-32 32H480c-17.7 0-32-14.3-32-32V288 224 64c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32zM416 224v64H224V224H416z"
+              ></path>
+            </svg>
+            <p class="title-font uppercase my-2 text-gray-400">Workout</p>
+            <p class="text-gray-300 text-center">
+              Ipsum dolor sit. Temporibus sequi porro? reprehenderit pariatur.
+              Doloribus quasi.
+            </p>
+          </div>
+          <div
+            class="hover:-translate-y-2 transition-all ease-in duration-300 card px-20 md:px-11 pt-5 rounded-lg pb-7 flex flex-col items-center justify-start"
+          >
+            <svg
+              class="w-[36px] h-[36px] fill-[#14eb6c]"
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M176 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h16V98.4C92.3 113.8 16 200 16 304c0 114.9 93.1 208 208 208s208-93.1 208-208c0-41.8-12.3-80.7-33.5-113.2l24.1-24.1c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L355.7 143c-28.1-23-62.2-38.8-99.7-44.6V64h16c17.7 0 32-14.3 32-32s-14.3-32-32-32H224 176zm72 192V320c0 13.3-10.7 24-24 24s-24-10.7-24-24V192c0-13.3 10.7-24 24-24s24 10.7 24 24z"
+              ></path>
+            </svg>
+            <p class="title-font uppercase my-2 text-gray-400">Progression</p>
+            <p class="text-gray-300 text-center">
+              Lorem ipsum dol soluta sequi porro? Veniam ipsa et reprehenderit.
+            </p>
+          </div>
+          <div
+            class="hover:-translate-y-2 transition-all ease-in duration-300 card px-20 md:px-11 pt-5 rounded-lg pb-7 flex flex-col items-center justify-start"
+          >
+            <svg
+              class="w-[36px] h-[36px] fill-[#14eb6c]"
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M416 0C400 0 288 32 288 176V288c0 35.3 28.7 64 64 64h32V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352 240 32c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32V255.6c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16V150.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8V16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z"
+              ></path>
+            </svg>
+            <p class="title-font uppercase my-2 text-gray-400">Nutrition</p>
+            <p class="text-gray-300 text-center">
+              Adipisicing elit. Temporibus soluta sequi? Veniam pariatur.
+              Ratione quasi.
+            </p>
+          </div>
+        </div>
+
+        <hr class="my-10 w-11/12" />
+
+        <h2 class="title-font mt-7 mb-5 font-bold text-4xl">Sponsors</h2>
+
+        <div
+          class="card rounded-lg w-5/6 md:w-11/12 overflow-hidden grid grid-cols-1 md:grid-cols-2"
+        >
+          <div class="px-10 lg:mt-5 py-5 md:text-lg">
+            The
+            <span class="title-font text-green-500">Fit Core</span>
+            company as several sponsorships with big brands. Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Quae corrupti dignissimos
+            fugiat, repellat earum tempore incidunt illo ipsum dolor sit.
+            <p class="hidden xl:block">
+              Lorem ipsum dolor sit amet elit. Magnam, aspernatur! Lorem ipsum
+              dolor sit.
+            </p>
+          </div>
+          <div class="h-full w-full max-h-72 flex justify-end">
+            <img
+              class="h-full w-full"
+              src="https://www.loyal.guru/wp-content/uploads/2023/07/LG_Blog_FashionBrands-13.png"
+              alt="sponsor brands"
+            />
+          </div>
+        </div>
+      </section>
+
+      <div id="tabs">
+        <div class="selected-tab pb-10">
+          <a href="./home.html">
+            <svg
+              class="not-sr-only"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="35"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m4 12 8-8 8 8M6 10.5V19a1 1 0 0 0 1 1h3v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h3a1 1 0 0 0 1-1v-8.5"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div>
+          <a href="./dashboard.html">
+            <svg
+              class="not-sr-only"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9.143 4H4.857A.857.857 0 0 0 4 4.857v4.286c0 .473.384.857.857.857h4.286A.857.857 0 0 0 10 9.143V4.857A.857.857 0 0 0 9.143 4Zm10 0h-4.286a.857.857 0 0 0-.857.857v4.286c0 .473.384.857.857.857h4.286A.857.857 0 0 0 20 9.143V4.857A.857.857 0 0 0 19.143 4Zm-10 10H4.857a.857.857 0 0 0-.857.857v4.286c0 .473.384.857.857.857h4.286a.857.857 0 0 0 .857-.857v-4.286A.857.857 0 0 0 9.143 14Zm10 0h-4.286a.857.857 0 0 0-.857.857v4.286c0 .473.384.857.857.857h4.286a.857.857 0 0 0 .857-.857v-4.286a.857.857 0 0 0-.857-.857Z"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div>
+          <a href="./foodplan.html">
+            <svg
+              class="not-sr-only"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M17.537 12.625a4.421 4.421 0 0 0 2.684 4.047 10.96 10.96 0 0 1-1.384 2.845c-.834 1.218-1.7 2.432-3.062 2.457-1.34.025-1.77-.794-3.3-.794-1.531 0-2.01.769-3.275.82-1.316.049-2.317-1.318-3.158-2.532-1.72-2.484-3.032-7.017-1.27-10.077A4.9 4.9 0 0 1 8.91 6.884c1.292-.025 2.51.869 3.3.869.789 0 2.27-1.075 3.828-.917a4.67 4.67 0 0 1 3.66 1.984 4.524 4.524 0 0 0-2.16 3.805m-2.52-7.432A4.4 4.4 0 0 0 16.06 2a4.482 4.482 0 0 0-2.945 1.516 4.185 4.185 0 0 0-1.061 3.093 3.708 3.708 0 0 0 2.967-1.416Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
