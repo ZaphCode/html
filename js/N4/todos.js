@@ -93,12 +93,12 @@ function getTodos() {
   const todosStr = localStorage.getItem("todos");
   if (todosStr) {
     todos = JSON.parse(todosStr);
-    displayTodos();
   }
 }
 
 function saveTodos() {
-  localStorage.setItem("todos", JSON.stringify(todos));
+  let todosStr = JSON.stringify(todos);
+  localStorage.setItem("todos", todosStr);
 }
 
 // * Eventos
