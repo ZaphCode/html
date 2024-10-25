@@ -36,6 +36,7 @@ function changeTodoStatus(index) {
 function displayTodos() {
   if (todos.length === 0) {
     todoContainer.innerHTML = html`<p class="text-center">No todos yet</p>`;
+    saveTodos();
     return;
   }
 
@@ -77,7 +78,7 @@ function displayTodos() {
     <div class="flex justify-center">
       <button
         onclick="clearTodos()"
-        class="mt-2 text-gray-500 hover:underline  hover:text-yellow-500"
+        class="my-2 text-gray-500 hover:underline  hover:text-yellow-500"
       >
         clear all
       </button>
