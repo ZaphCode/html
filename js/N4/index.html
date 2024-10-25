@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="todos.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODOs</title>
+  </head>
+  <body
+    class="dark:bg-neutral-800 transition-colors duration-500 dark:text-white"
+  >
+    <div class="flex flex-col items-center mt-10">
+      <h2 class="flex items-center gap-x-3 font-bold text-3xl">
+        TodoList
+        <button id="theme-btn">
+          <svg
+            class="h-8 w-8 hidden dark:block text-yellow-400"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+          <svg
+            class="h-8 w-8 text-yellow-400 dark:hidden"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" />
+            <path d="M16.2 4a9.03 9.03 0 1 0 3.9 12a6.5 6.5 0 1 1 -3.9 -12" />
+          </svg>
+        </button>
+      </h2>
+      <div class="mt-5">
+        <div class="mx-auto flex justify-center">
+          <input
+            id="new-input"
+            type="text"
+            class="border-2 w-64 border-yellow-300 text-black dark:text-white transition-all duration-500 bg-white dark:bg-neutral-800 py-2 px-4 outline-none"
+            placeholder="Add a new TODO"
+          />
+          <button id="add-btn" class="bg-yellow-300 text-white py-2 px-5 ml-2">
+            Add
+          </button>
+        </div>
+        <div
+          class="mt-7 pt-6 w-full max-w-screen-md px-5 border-t-2 border-dotted border-gray-300 dark:border-gray-400"
+          id="todo-container"
+        ></div>
+      </div>
+    </div>
+    <div class="fixed bottom-6 right-8 italic text-lg text-gray-400">
+      by orquidez &copy; 2024
+    </div>
+  </body>
+</html>
